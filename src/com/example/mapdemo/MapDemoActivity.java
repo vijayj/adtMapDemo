@@ -69,7 +69,8 @@ public class MapDemoActivity extends FragmentActivity {
 		params.put("origin", start.latitude + "," + start.longitude);
 		params.put("destination", destination.latitude + "," + destination.longitude);
 		params.put("sensor", "true");
-		
+		params.put("mode", "walking");
+			
 		client.get("http://maps.googleapis.com/maps/api/directions/json", params,  new JsonHttpResponseHandler() {
 
 //			@Override
